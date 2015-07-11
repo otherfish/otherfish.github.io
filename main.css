@@ -3,15 +3,29 @@
     box-sizing:border-box;
 }
 body{
+    min-width: 980px;
     margin: 0;
     background: #fafafa;
     font: 17px/1.7 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
     color: #555;
 }
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
 img{
      border: none;
 }
-
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s;
+}
 .clearfix:before,
 .clearfix:after{
     content: "";
@@ -24,6 +38,7 @@ img{
     *zoom: 1;
 }
 /* welcome.css */
+
 .banner-page{
     background: url("images/01.jpg");
     height: 450px;
@@ -45,14 +60,112 @@ img{
     text-align: center;
     opacity: 0.8;
 }
-.header{
-    height: 70px;
-    background: #1b39ab;
+
+.post-list-wrapper{
+    padding: 70px 0;
+    background: #ebeced;
+}
+.post{
+    background: #fff;
+    width: 290px;
+    height: 420px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 1px rgba(0,0,0,.08);
+    float: left;
+    /* 专门为 date 设置的 relative */
+    position: relative;
+}
+.post .thumbnail{
+    display: block;
+    width: 290px;
+    height: 290px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.post .post-info{
+    margin: 24px;
+}
+.post h3{
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: normal;
+}
+.post .date{
+    position: absolute;
+    left: 24px;
+    bottom: 10px;
+    font-size: 13px;
+    color: #b5b9bd;
+}
+/* layout.css */
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,.3);
+}
+.header .nav{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.header .nav li{
+    list-style: none;
+    float: left;
+    margin-right: 7px;
+    margin-top:12px;
+}
+.header .nav li a{
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.header .nav li a:hover{
+    border: 1px solid rgba(255,255,255,.2);
+}
+.header .nav li.current a{
+    background: rgba(255,255,255,.2);
+    border: 1px solid transparent;
+}
+.header .logo{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    /*居中*/
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -30px;
+
+    /*字体居中*/
+    color: #fff;
+    font-size: 35px;
+    line-height: 60px;
+    text-align: center;
+
+    /*颜色样式*/
+    background: #00c4cc;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+
+    /*transition 效果 */
+    transition: top .2s ease-out,box-shadow .2s ease-out;
+}
+.header .logo:hover{
+    top: 18px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
 }
 .wrapper{
     width: 960px;
-    margin: 0 auto;
+    margin: 51px auto;
     background: #fff;
     box-shadow: 0px 2px 5px black;
     padding: 30px;
