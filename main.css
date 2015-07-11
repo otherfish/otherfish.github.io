@@ -1,6 +1,27 @@
+/* common.css */
+*{
+    box-sizing:border-box;
+}
 body{
     margin: 0;
     background: #fafafa;
+    font: 17px/1.7 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+    color: #555;
+}
+img{
+     border: none;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
 }
 .header{
     height: 70px;
@@ -9,8 +30,20 @@ body{
 }
 .wrapper{
     width: 960px;
-    height: 700px;
     margin: 0 auto;
     background: #fff;
     box-shadow: 0px 2px 5px black;
+    padding: 30px;
+}
+/* blog post */
+.post-title{
+    font-weight: normal;
+    color: #eb3170;
+    text-align: center;
+    margin: 10px auto;
+}
+.post-img{
+    max-width: 100%;
+    display: block;
+    margin: 30px auto;
 }
