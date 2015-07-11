@@ -23,6 +23,28 @@ img{
 .clearfix{
     *zoom: 1;
 }
+/* welcome.css */
+.banner-page{
+    background: url("images/01.jpg");
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.tagline{
+      font-size: 44px;
+      font-weight: normal;
+      color: #e2e3e4;
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: auto;
+}
+
+.tagline-caption{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.8;
+}
 .header{
     height: 70px;
     background: #1b39ab;
