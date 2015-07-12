@@ -263,3 +263,22 @@ a{
     display: block;
     margin: 30px auto;
 }
+
+/* about.css */
+.about-banner{
+    height: 240px;
+    background-size: cover;
+    margin-top: -50px;
+}
+
+.text h3{
+    font-size: 80px;
+}
+
+.text .detail{
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
