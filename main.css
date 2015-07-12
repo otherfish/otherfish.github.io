@@ -44,6 +44,7 @@ a{
     height: 450px;
     background-size: cover;
     background-position: 50% 50%;
+    margin-top: -50px;
 }
 .tagline{
       font-size: 44px;
@@ -67,10 +68,10 @@ a{
 }
 .post{
     background: #fff;
-    width: 290px;
-    height: 420px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 300px;
+    height: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 1px rgba(0,0,0,.08);
@@ -78,15 +79,42 @@ a{
     /* 专门为 date 设置的 relative */
     position: relative;
 }
+.thumbnail-image{
+    display: block;
+    position: relative;
+}
+.thumbnail-image:before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    opacity: 0;
+    transition:opacity 1s;
+}
+.thumbnail-image:hover:before{
+    opacity: 0.6;
+}
 .post .thumbnail{
     display: block;
-    width: 290px;
-    height: 290px;
+    width: 300px;
+    height: 200px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
 .post .post-info{
     margin: 24px;
+}
+.post-info a{
+    color: #000;
+}
+.post-info a:hover{
+    color: #b5b9bd;
 }
 .post h3{
     font-size: 18px;
@@ -102,12 +130,10 @@ a{
 }
 /* layout.css */
 .header{
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
     height: 50px;
     background: rgba(0,0,0,.3);
+    z-index: 100;
+    position: relative;
 }
 .header .nav{
     margin: 0;
@@ -163,19 +189,70 @@ a{
     top: 18px;
     box-shadow: 0 3px 3px rgba(0,0,0,.1);
 }
-.wrapper{
-    width: 960px;
-    margin: 51px auto;
+
+.footer{
+    height: 200px;
+    background: #292d35;
+    margin-top: 50px;
+}
+.icon-wrapper{
+    margin-top: 30px;
+}
+.footer .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    margin-right: 7px;
+    font-size: 20px;
+    background: #2196f3;
+}
+.footer .icon.red{
+    background: #d32f2f;
+}
+
+.footer  a{
+    color: #fff;
+}
+/* blog.css */
+
+.blog-banner{
+    background: url(images/blog-banner.jpg);
+    height: 800px;
+    background-size: cover;
+    margin-top: -50px;
+}
+.blog-wrapper{
+    width: 780px;
+    margin: 0px auto;
+    margin-top: 40px;
     background: #fff;
-    box-shadow: 0px 2px 5px black;
+    letter-spacing: .01rem;
+    font-size: 18px;
+    color: rgba(0,0,0,0.8);
     padding: 30px;
 }
 /* blog post */
 .post-title{
-    font-weight: normal;
-    color: #eb3170;
-    text-align: center;
-    margin: 10px auto;
+    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  margin-left: -3px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-top: 40px;
+  padding-top: 0;
+  margin-bottom: 8px;
+  color: rgba(0,0,0,0.8);
+}
+.author-date{
+    color: rgba(0,0,0,0.44);
+    line-height: 1;
+    margin-bottom: 40px;
 }
 .post-img{
     max-width: 100%;
