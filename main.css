@@ -211,10 +211,17 @@ a{
     float: left;
     margin-right: 7px;
     font-size: 20px;
-    background: #2196f3;
 }
-.footer .icon.red{
-    background: #d32f2f;
+.icon.github {
+  background: #2196F3;
+}
+
+.icon.weibo {
+  background: #D32F2F;
+}
+
+.icon.email {
+  background: #00BCD4;
 }
 
 .footer  a{
