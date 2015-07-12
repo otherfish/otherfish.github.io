@@ -40,28 +40,32 @@ a{
 /* welcome.css */
 
 .banner-page{
-    background: url("images/01.jpg");
     height: 450px;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: -50px;
 }
-.tagline{
-      font-size: 44px;
-      font-weight: normal;
-      color: #e2e3e4;
-      text-align: center;
-      margin-top: 150px;
-      margin-bottom: auto;
+.banner-page .container{
+    position: relative;
+    height: 100%;
 }
-
-.tagline-caption{
-    color: #fff;
-    font-size: 20px;
+.read-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
     text-align: center;
-    opacity: 0.8;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
 }
 
+.read-btn:hover{
+    color: #000;
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+}
 .post-list-wrapper{
     padding: 70px 0;
     background: #ebeced;
@@ -219,7 +223,7 @@ a{
 /* blog.css */
 
 .blog-banner{
-    background: url(images/blog-banner.jpg);
+    
     height: 800px;
     background-size: cover;
     margin-top: -50px;
