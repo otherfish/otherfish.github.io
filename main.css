@@ -27,10 +27,12 @@ img{
         width: 96%;
     }
 }
+
 a{
     text-decoration: none;
     transition: all 0.3s;
 }
+
 .clearfix:before,
 .clearfix:after{
     content: "";
