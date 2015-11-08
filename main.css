@@ -93,7 +93,7 @@ a{
     background: #fff;
     width: 29.333%;
     margin-right: 2%;
-    height: 320px;
+    height: auto;
     margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 1px rgba(0,0,0,.08);
