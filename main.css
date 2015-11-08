@@ -107,7 +107,7 @@ a{
         width: 46%;
         margin-left: 2%;
         margin-right: 2%;
-        height: 290px;
+        height: auto;
     }
 }
 .thumbnail-image{
